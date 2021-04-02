@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#ffffff</color>
+    <color name="black">#202020</color>
+    <color name="black_real">#000000</color>
+
+    <color name="red">#D50000</color>
+    <color name="orange">#FF6D00</color>
+    <color name="yellow">#FFAB00</color>
+    <color name="green">#00C853</color>
+    <color name="blue">#2962FF</color>
+    <color name="indigo">#304FFE</color>
+    <color name="violet">#6200EA</color>
+
+    <color name="ucrop_color_statusbar">#202020</color>
+    <color name="ucrop_color_toolbar">#ffffff</color>
+    <color name="ucrop_color_toolbar_widget">#202020</color>
+    <color name="ucrop_color_crop_background">#202020</color>
+    <color name="ucrop_color_inactive_controls_color">#bdbdbd</color>
+    <color name="ucrop_color_widget_active">#202020</color>
+    <color name="ucrop_color_active_controls_color">#202020</color>
+    <color name="ucrop_color_widget_background">#ffffff</color>
+
+</resources>

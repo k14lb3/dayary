@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cvParent"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginVertical="12dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="8dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?attr/toolbar">
+
+            <ImageView
+                android:id="@+id/imgCover"
+                android:layout_width="250dp"
+                android:layout_height="200dp"
+                android:layout_alignParentEnd="true"
+                android:scaleType="fitXY"
+                android:src="@mipmap/img_def"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="36dp"
+                app:cardCornerRadius="0dp"
+                app:elevation="50dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/imgCover"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/txtDayNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:text="10"
+                    android:textColor="?attr/text"
+                    android:textSize="50sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/txtDay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtDayNum"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="@font/open_sans_light"
+                    android:text="SAT"
+                    android:textAllCaps="true"
+                    android:textColor="?attr/text"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtDayNum" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/clMoods"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtDay">
+
+                    <ImageView
+                        android:id="@+id/imgFavorite"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:paddingStart="2dp"
+                        android:paddingEnd="2dp"
+                        android:src="@drawable/ic_favorite"
+                        android:visibility="visible"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/imgHappy"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:paddingStart="2dp"
+                        android:paddingEnd="2dp"
+                        android:src="@drawable/ic_happy"
+                        android:visibility="visible"
+                        app:layout_constraintStart_toEndOf="@+id/imgFavorite"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                    <ImageView
+                        android:id="@+id/imgSad"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:paddingStart="2dp"
+                        android:paddingEnd="2dp"
+                        android:src="@drawable/ic_sad"
+                        android:visibility="visible"
+                        app:layout_constraintStart_toEndOf="@+id/imgHappy"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                    <ImageView
+                        android:id="@+id/imgBad"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:paddingStart="2dp"
+                        android:paddingEnd="2dp"
+                        android:src="@drawable/ic_bad"
+                        android:visibility="visible"
+                        app:layout_constraintStart_toEndOf="@+id/imgSad"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</RelativeLayout>

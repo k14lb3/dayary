@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        <dimen name="pass_dot_size">32sp</dimen>
+        <dimen name="pass_number_size">16sp</dimen>
+        <dimen name="moods_three_displayed_size">56dp</dimen>
+        <dimen name="moods_two_displayed_size">72dp</dimen>
+        <dimen name="moods_one_displayed_size">88dp</dimen>
+</resources>

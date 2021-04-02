@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/bg"
+    tools:context=".LoginActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:elevation="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar2"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="?attr/bg"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imgBack"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="16dp"
+                android:src="@drawable/ic_back"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout2">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/txtLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/open_sans_light"
+                android:text="Enter Password"
+                android:textColor="?attr/text"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtPass"
+                android:layout_width="wrap_content"
+                android:layout_height="96dp"
+                android:gravity="center"
+                android:textColor="?attr/text"
+                android:textSize="80sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txtLabel" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout4">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvOne"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="48dp"
+                app:cardBackgroundColor="?attr/toolbar"
+                app:cardCornerRadius="64dp"
+                app:cardElevation="3dp"
+                app:layout_constraintBottom_toBottomOf="@+id/cvTwo"
+                app:layout_constraintEnd_toStartOf="@id/cvTwo"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/cvTwo"
+                app:layout_constraintVertical_bias="0.0">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/open_sans_light"
+                    android:text="1"
+                    android:textColor="?attr/text"
+                    android:textSize="36sp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvTwo"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_marginTop="16dp"
+                android:background="?attr/toolbar"
+                app:cardBackgroundColor="?attr/toolbar"
+                app:cardCornerRadius="64dp"
+                app:cardElevation="3dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/open_sans_light"
+                    android:text="2"
+                    android:textColor="?attr/text"
+                    android:textSize="36sp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvThree"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_marginStart="48dp"
+                android:background="?attr/toolbar"
+                app:cardBackgroundColor="?attr/toolbar"
+                app:cardCornerRadius="64dp"
+                app:cardElevation="3dp"
+                app:layout_constraintBottom_toBottomOf="@+id/cvTwo"
+                app:layout_constraintStart_toEndOf="@+id/cvTwo"
+                app:layout_constraintTop_toTopOf="@+id/cvTwo">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/open_sans_light"
+                    android:text="3"
+                    android:textColor="?attr/text"
+                    android:textSize="36sp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvFour"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                app:cardBackgroundColor="?attr/toolbar"
+                app:cardCornerRadius="64dp"
+                app:cardElevation="3dp"
+                app:layout_constraintBottom_toBottomOf="@+id/cvFive"
+                app:layout_constraintEnd_toEndOf="@+id/cvOne"
+                app:layout_constraintTop_toTopOf="@+id/cvFive">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/open_sans_light"
+                    android:text="4"
+                    android:textColor="?attr/text"
+                    android:textSize="36sp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvFive"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_marginTop="16dp"
+                app:cardBackgroundColor="?attr/toolbar"
+                app:cardCornerRadius="64dp"
+                app:cardElevation="3dp"
+                app:layout_constraintEnd_toEndOf="@+id/cvTwo"
+                app:layout_constraintStart_toStartOf="@+id/cvTwo"
+                app:layout_constraintTop_toBottomOf="@id/cvTwo">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/open_sans_light"
+                    android:text="5"
+                    android:textColor="?attr/text"
+                    android:textSize="36sp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvSix"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                app:cardBackgroundColor="?attr/toolbar"
+                app:cardCornerRadius="64dp"
+                app:cardElevation="3dp"
+                app:layout_constraintBottom_toBottomOf="@+id/cvFive"
+                app:layout_constraintStart_toStartOf="@+id/cvThree"
+                app:layout_constraintTop_toTopOf="@+id/cvFive">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/open_sans_light"
+                    android:text="6"
+                    android:textColor="?attr/text"
+                    android:textSize="36sp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvSeven"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:background="?attr/toolbar"
+                app:cardBackgroundColor="?attr/toolbar"
+                app:cardCornerRadius="64dp"
+                app:cardElevation="3dp"
+                app:layout_constraintBottom_toBottomOf="@+id/cvEight"
+                app:layout_constraintEnd_toEndOf="@+id/cvFour"
+                app:layout_constraintTop_toTopOf="@+id/cvEight">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/open_sans_light"
+                    android:text="7"
+                    android:textColor="?attr/text"
+                    android:textSize="36sp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvEight"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_marginTop="16dp"
+                android:background="?attr/toolbar"
+                app:cardBackgroundColor="?attr/toolbar"
+                app:cardCornerRadius="64dp"
+                app:cardElevation="3dp"
+                app:layout_constraintEnd_toEndOf="@+id/cvFive"
+                app:layout_constraintStart_toStartOf="@+id/cvFive"
+                app:layout_constraintTop_toBottomOf="@id/cvFive">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/open_sans_light"
+                    android:text="8"
+                    android:textColor="?attr/text"
+                    android:textSize="36sp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvNine"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                app:cardBackgroundColor="?attr/toolbar"
+                app:cardCornerRadius="64dp"
+                app:cardElevation="3dp"
+                app:layout_constraintBottom_toBottomOf="@+id/cvEight"
+                app:layout_constraintStart_toStartOf="@+id/cvSix"
+                app:layout_constraintTop_toTopOf="@+id/cvEight">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/open_sans_light"
+                    android:text="9"
+                    android:textColor="?attr/text"
+                    android:textSize="36sp" />
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvDelete"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:background="?attr/toolbar"
+                app:cardBackgroundColor="?attr/toolbar"
+                app:cardCornerRadius="64dp"
+                app:cardElevation="3dp"
+                app:layout_constraintBottom_toBottomOf="@+id/cvZero"
+                app:layout_constraintEnd_toEndOf="@+id/cvSeven"
+                app:layout_constraintTop_toTopOf="@+id/cvZero">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/open_sans_light"
+                    android:text="⌫"
+                    android:textColor="?attr/text"
+                    android:textSize="26sp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvZero"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="?attr/toolbar"
+                app:cardBackgroundColor="?attr/toolbar"
+                app:cardCornerRadius="64dp"
+                app:cardElevation="3dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/cvEight"
+                app:layout_constraintStart_toStartOf="@+id/cvEight"
+                app:layout_constraintTop_toBottomOf="@id/cvEight">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/open_sans_light"
+                    android:text="0"
+                    android:textColor="?attr/text"
+                    android:textSize="36sp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvLogin"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:background="?attr/toolbar"
+                app:cardBackgroundColor="?attr/toolbar"
+                app:cardCornerRadius="64dp"
+                app:cardElevation="3dp"
+                app:layout_constraintBottom_toBottomOf="@+id/cvZero"
+                app:layout_constraintStart_toStartOf="@+id/cvNine"
+                app:layout_constraintTop_toTopOf="@+id/cvZero">
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/open_sans_light"
+                    android:src="@drawable/ic_check"
+                    android:textColor="?attr/text" />
+
+            </androidx.cardview.widget.CardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

@@ -1,0 +1,60 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Diary.Light" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#202020</item>
+        <item name="colorPrimaryVariant">#202020</item>
+        <item name="colorOnPrimary">#202020</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+        <item name="toolbar">#ffffff</item>
+        <item name="bg">#ffffff</item>
+        <item name="text">#202020</item>
+        <item name="reaction">#363636</item>
+        <item name="page_highlight">#f1f1f1</item>
+        <item name="btn_background">#c5c5c5</item>
+        <item name="btn_line">#c5c5c5</item>
+        <item name="colorAccent">#202020</item>
+        <!-- For DatePicker. -->
+        <item name="colorControlNormal">#f1f1f1</item>
+        <item name="android:textColorPrimary">#202020</item>
+        <item name="android:fontFamily">@font/open_sans_light</item>
+
+    </style>
+
+    <style name="Theme.Diary.Dark" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#202020</item>
+        <item name="colorPrimaryVariant">#202020</item>
+        <item name="colorOnPrimary">#202020</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+        <item name="toolbar">#363636</item>
+        <item name="bg">#202020</item>
+        <item name="text">#ffffff</item>
+        <item name="reaction">#bdbdbd</item>
+        <item name="page_highlight">#424246</item>
+        <item name="btn_background">#000000</item>
+        <item name="btn_line">#424246</item>
+        <item name="colorAccent">#ffffff</item>
+        <!-- For DatePicker. -->
+        <item name="colorControlNormal">#424246</item>
+        <item name="android:textColorPrimary">#ffffff</item>
+        <item name="android:fontFamily">@font/open_sans_light</item>
+    </style>
+
+    <style name="CalenderViewCustom" parent="Theme.AppCompat">
+        <item name="colorAccent">#797979</item>
+        <item name="colorPrimary">?attr/text</item>
+        <item name="android:textColorPrimary">?attr/text</item>
+    </style>
+
+    <style name="CalenderViewDateCustomText" parent="android:TextAppearance.DeviceDefault.Small">
+        <item name="android:textColor">?attr/text</item>
+        <item name="android:weekNumberColor">?attr/text</item>
+    </style>
+
+
+</resources>

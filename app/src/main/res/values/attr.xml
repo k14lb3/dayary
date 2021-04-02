@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="dt">
+        <attr name="toolbar" format="color"/>
+        <attr name="bg" format="color"/>
+        <attr name="text" format="color"/>
+        <attr name="reaction" format="color"/>
+        <attr name="page_highlight" format="color"/>
+        <attr name="btn_background" format="color"/>
+        <attr name="btn_line" format="color"/>
+    </declare-styleable>
+
+</resources>
